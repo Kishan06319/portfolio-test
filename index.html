@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -28,12 +28,19 @@
     <link rel="stylesheet" href="css/skill.css" />
     <link rel="stylesheet" href="css/about.css" />
     <link rel="stylesheet" href="css/sidebar.css" />
+    <link rel="stylesheet" href="css/contact.css" />
   </head>
   <body style="background-color: rgb(242 242 242)">
     <nav class="sidebar">
       <i id="hamburger" class="fa-solid fa-bars sidebar_hamburger"></i>
       <div class="sidebar_content">
         <ul class="sidebar_list">
+          <img
+            class="sidebar_image"
+            src="images/profile.jpg"
+            alt="Profile Image"
+          />
+          <h2 class="sidebar-name">Kishan Khatiwada</h2>
           <li>
             <a href="#hero" class="sidebar_list_item">Home</a>
           </li>
@@ -43,13 +50,16 @@
           <li>
             <a href="#skills" class="sidebar_list_item">Skills</a>
           </li>
+          <li>
+            <a href="#contact" class="sidebar_list_item">Contact</a>
+          </li>
         </ul>
       </div>
     </nav>
     <section id="hero">
       <h1>
-        Hi, <br />I am Kishan.<br />
-        I am a Computer Engineer.
+        Hi, <br />I am Kishan Khatiwada.<br />
+        A Computer Engineering Student.
       </h1>
       <p>Electronics and Computer Engineering</p>
       <button>
@@ -60,13 +70,16 @@
       <p class="section_title">ABOUT ME</p>
       <p class="section_subtitle">WHO AM I?</p>
       <p class="about_description">
-        <strong>Hi, I am Kishan. </strong>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita porro
-        quod aperiam numquam accusantium? Earum animi suscipit cumque ullam
-        fugiat dicta provident quisquam optio distinctio fuga explicabo eveniet
-        perferendis, minima voluptatibus sunt nobis totam, quasi laudantium
-        similique! Ut eum delectus sit. Repudiandae, fugit inventore. Debitis,
-        dicta dolor?
+        <strong>Hi, I am Kishan Khatiwada.</strong>
+        I am a Computer Engineering student with a strong interest in web
+        development and software technologies. I enjoy building clean and
+        responsive websites using HTML, CSS, and JavaScript, and I am
+        continuously improving my skills by working on personal projects and
+        practicing new concepts.
+        <br /><br />
+        I am passionate about learning modern technologies, solving problems,
+        and growing as a developer. My goal is to become a skilled software
+        engineer and contribute to meaningful and real-world projects.
       </p>
 
       <div class="about_skill">
@@ -89,25 +102,17 @@
       </div>
     </section>
     <section id="skills" class="section">
-      <p class="section_title">About Me</p>
-      <p class="section_subtitle">Who am I</p>
+      <p class="section_title">MY SPECIALITY</p>
+      <p class="section_subtitle">my skills</p>
       <div class="all-skills">
         <div class="skill">
-          <p>Html5</p>
-          <div class="skill_bg_box">
-            <div class="skill_percentage_box">
-              <span>80%</span>
-            </div>
-          </div>
-        </div>
-        <div class="skill">
-          <p>css3</p>
+          <p>C/C++</p>
           <div class="skill_bg_box">
             <div
               class="skill_percentage_box"
-              style="background: red; color: red; width: 70%"
+              style="background: red; color: red; width: 90%"
             >
-              <span>70%</span>
+              <span>80%</span>
             </div>
           </div>
         </div>
@@ -116,43 +121,84 @@
           <div class="skill_bg_box">
             <div
               class="skill_percentage_box"
-              style="background: green; color: green; width: 40%"
+              style="background: green; color: green; width: 55%"
             >
-              <span>40%</span>
+              <span>60% </span>
             </div>
           </div>
         </div>
         <div class="skill">
           <p>Html5</p>
           <div class="skill_bg_box">
-            <div class="skill_percentage_box">
-              <span>80%</span>
+            <div class="skill_percentage_box" style="width: 70%">
+              <span>75%</span>
             </div>
           </div>
         </div>
         <div class="skill">
-          <p>css3</p>
+          <p>Python</p>
           <div class="skill_bg_box">
             <div
               class="skill_percentage_box"
-              style="background: red; color: red; width: 70%"
+              style="background: purple; color: purple; width: 40%"
             >
-              <span>70%</span>
-            </div>
-          </div>
-        </div>
-        <div class="skill">
-          <p>javascript</p>
-          <div class="skill_bg_box">
-            <div
-              class="skill_percentage_box"
-              style="background: green; color: green; width: 40%"
-            >
-              <span>40%</span>
+              <span>65%</span>
             </div>
           </div>
         </div>
       </div>
+    </section>
+    <section id="contact" class="section">
+      <p class="section_title">Get In Touch</p>
+      <p class="section_subtitle">Contact</p>
+        <form
+          action=""
+          id="contactForm"
+          class="contact__form"
+          onsubmit="submitForm(event)"
+        >
+          <div class="form-group">
+            <input
+              type="text"
+              placeholder="Your Name"
+              class="contact__input"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <input
+              type="email"
+              placeholder="Your Email"
+              class="contact__input"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <input
+              type="text"
+              placeholder="Subject"
+              class="contact__input"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <textarea
+              placeholder="Your Message"
+              class="contact__textarea"
+              rows="5"
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="contact__button">
+            <span>Send Message</span>
+            <i class="fas fa-paper-plane"></i>
+          </button>
+        </form>
+      </section>
+
+      <footer class="footer">
+        <p>&copy; 2026 Kishan Khatiwada. All Rights Reserved.</p>
+      </footer>
     </section>
     <script>
       const hamburger = document.querySelector("#hamburger");
